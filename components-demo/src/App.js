@@ -127,13 +127,13 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <button onClick={this.getCards}></button>
-          <ul className="playingCards faceImages">
+          <div className="playingCards faceImages">
             <Cards suit={this.state.cards[0].suit} rank={this.state.cards[0].rank} classes={this.addClass(0)}/>
             <Cards suit={this.state.cards[1].suit} rank={this.state.cards[1].rank} classes={this.addClass(1)}/>
             <Cards suit={this.state.cards[2].suit} rank={this.state.cards[2].rank} classes={this.addClass(2)}/>
             <Cards suit={this.state.cards[3].suit} rank={this.state.cards[3].rank} classes={this.addClass(3)}/>
             <Cards suit={this.state.cards[4].suit} rank={this.state.cards[4].rank} classes={this.addClass(4)}/>
-          </ul>
+          </div>
           <h3 id="message"></h3>
         </div>
       </div>
